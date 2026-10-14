@@ -1,8 +1,8 @@
-# Experiment Summary Report (2026-10-14 20:28:15)
+# Experiment Summary Report (2026-10-14 21:59:43)
 
 ```text
 ================================================================================
-EXPERIMENT RUN LOG — 2026-10-14 20:28:15
+EXPERIMENT RUN LOG — 2026-10-14 21:59:43
 ================================================================================
 
 1. MASTER CONFIGURATION SETTINGS:
@@ -12,7 +12,7 @@ EXPERIMENT RUN LOG — 2026-10-14 20:28:15
    - SFS_SELECTOR_MODEL     : Decision Tree
    - PCA_VARIANCE           : 0.95 (4 components kept)
    - CV_FOLDS               : 5
-   - UNIQUE_FINALIST_MODELS : True
+   - UNIQUE_FINALIST_MODELS : False
 
 2. FEATURES SELECTED BY EACH METHOD:
    - Baseline (All 6)       : Type, Air temperature [K], Process temperature [K], Rotational speed [rpm], Torque [Nm], Tool wear [min]
@@ -37,7 +37,6 @@ No feature selection   MLP               0.769231                   0.686275    
 
 4. STACKING ENSEMBLE VS. TOP-1 INDIVIDUAL MODEL (VALIDATION):
    Feature selection            Model  Validation failure F1  Validation failure recall  Validation failure precision  Validation missed failures  Validation false alarms
-No feature selection              MLP               0.769231                   0.686275                      0.875000                          16                        5
 No feature selection Stacking (Top 3)               0.642336                   0.862745                      0.511628                           7                       42
 
 5. TOP 3 FINALISTS AFTER 5-FOLD CV HYPERPARAMETER TUNING (VALIDATION):
